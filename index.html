@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>Polly와 DynamoDB를 이용한 웹 서비스</title>
+
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div id="content">
+            <h1>AWS 기말고사</h1>
+            <br/>
+            <h2>Polly와 DynamoDB를 이용한 웹 서비스</h2>
+            <h4>201632230 컴퓨터공학과 이다은</h4>
+
+            <br/>
+            음성:
+            <select id="voiceSelected">
+                <option value="서연">서연 (한국어, Korean)</option>
+                <option value="Mizuki">Mizuki (일본어, Japanese)</option>
+                <option value="Ivy">Ivy (영어, American)</option>
+                <option value="Justin">Justin (영어, American)</option>
+                <option value="Emma">Emma (영어, British)</option>
+                <option value="Amy">Amy (영어, British)</option>
+                <option value="Céline">Céline (불어, French)</option>
+                <option value="Marlene">Marlene (독어, German)</option>
+            </select>
+            
+            <br/><br/>
+            Polly에서 변환할 텍스트를 입력해주세요.
+            <input type="submit" value="변환하기" id="convert" class="buttons">
+
+            <span id="postIDreturned"></span>
+            <br/><br/>
+            
+            <textarea id="postText"></textarea>
+
+            <br/><br/><br/><br/>
+            DynamoDB에서 불러올 ID를 입력해주세요.
+            <br/>
+            ( * 를 입력하면 DynamoDB에 저장된 내용이 전부 출력됩니다.)
+            <input type="text" id="postId">
+            <input type="submit" value="불러오기" id="search" class="buttons">
+            <br/>
+        </div>
+
+        <table id="posts">
+            <colgroup>
+                <col style="width:30%">
+                <col style="width:10%">
+                <col style="width:40%">
+                <col style="width:15%">                
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th>ID</th>
+                    <th>음성</th>
+                    <th>내용</th>
+                    <th>상태</th>
+                </tr>
+            </tbody>
+        </table>
+
+        <script src="scripts.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+    </body>
+</html>
