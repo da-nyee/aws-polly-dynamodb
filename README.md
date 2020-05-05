@@ -3,6 +3,9 @@
 ### Preview
 ![polly_dynamodb](./img/polly_dynamodb.PNG)
 
+### Architecture
+![polly_dynamodb_service_architecture](./img/polly_dynamodb_service_architecture.png)
+
 ### Endpoint
 - http://bucket-for-final-hosting.s3-website-us-east-1.amazonaws.com/
 
