@@ -9,5 +9,8 @@
 ### Endpoint
 - http://bucket-for-final-hosting.s3-website-us-east-1.amazonaws.com/
 
+### Reference
+- [당신이 지금 알아야 할 AWS](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791190014304)
+
 ### Developer
 - https://github.com/da-nyee (Daeun Lee, 이다은)
